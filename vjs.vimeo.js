@@ -52,6 +52,9 @@ videojs.Vimeo.prototype.dispose = function() {
 	videojs.MediaTechController.prototype.dispose.call(this)
 };
 videojs.Vimeo.prototype.src = function(src) {
+	if (!src) {
+		return this.el_.src;
+	}
 	this.isReady_ = false;
 	var regExp = /^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/;
 	var match = src.match(regExp);
@@ -106,6 +109,9 @@ videojs.Vimeo.prototype.setVolume = function(percentAsDecimal) {
 videojs.Vimeo.prototype.currentSrc = function() {
 	return this.el_.src
 };
+videojs.Vimeo.prototype.ended = function() {
+    return this.vimeoInfo.state === VimeoState.ENDED;
+  };
 videojs.Vimeo.prototype.muted = function() {
 	return this.vimeoInfo.muted || false
 };
