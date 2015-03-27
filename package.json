@@ -1,0 +1,19 @@
+{
+  "name": "colearnr/videojs-vimeo",
+  "description": "Allows you to use Vimeo URL as source with Video.js.",
+  "version": "1.0.2",
+  "copyright": "Copyright 2015 VidRoll",
+  "keywords": [
+    "flash",
+    "video",
+    "player"
+  ],
+  "author": "",
+  "dependencies": {
+    "video.js": "~4.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VidRoll/videojs-vimeo"
+  }
+}
