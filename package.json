@@ -1,5 +1,5 @@
 {
-  "name": "colearnr/videojs-vimeo",
+  "name": "videojs-vimeo",
   "description": "Allows you to use Vimeo URL as source with Video.js.",
   "version": "1.0.2",
   "copyright": "Copyright 2015 VidRoll",
